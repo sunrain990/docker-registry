@@ -18,7 +18,7 @@ docker run -d -p 3306:3306 -v /var/lib/docker/vfs/dir/mydata:/var/lib/mysql csph
 
 docker run -d -p 80:80 --name wordpress -e WORDPRESS_DB_HOST=10.51.87.81 -e WORDPRESS_DB_USER=admin -e WORDPRESS_DB_PASSWORD=csphere2015 csphere/wordpress:4.2
 
-
+ && yum swap fakesystemd systemd
 
 1.ENTRYPOINT["executable","param1","param2"](the preferred exec form)
 
